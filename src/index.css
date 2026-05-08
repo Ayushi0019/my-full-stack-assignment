@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Times New Roman", Times, serif;
+  
+  --color-worst-bg: #ffffff;
+  --color-worst-text: #000000;
+  --color-worst-sidebar: #cccccc;
+  --color-worst-header: #0000ff;
+  --color-worst-btn: #ffff00;
+  --color-worst-accent: #ff0000;
+}
