@@ -1,15 +1,4 @@
-export type Language = 'HTML' | 'CSS' | 'JavaScript' | 'React' | 'PHP';
-
-export interface Question {
-  id: string;
-  title: string;
-  description: string;
-  code: string;
-  output: string;
-  category: Language;
-}
-
-export const questions: Question[] = [
+export const questions = [
   // HTML
   {
     id: 'html-4',

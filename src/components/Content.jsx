@@ -1,11 +1,6 @@
 import { useState } from 'react';
-import { Question } from '../data/questions';
 
-interface QuestionDisplayProps {
-  question: Question;
-}
-
-export function QuestionDisplay({ question }: QuestionDisplayProps) {
+export function QuestionDisplay({ question }) {
   return (
     <div className="space-y-4 p-4 border-4 border-double border-black bg-white">
       <h2 className="text-4xl font-bold text-red-600 uppercase italic">
@@ -34,13 +29,7 @@ export function QuestionDisplay({ question }: QuestionDisplayProps) {
   );
 }
 
-interface QuestionListProps {
-  questions: Question[];
-  selectedId: string | null;
-  onSelect: (id: string) => void;
-}
-
-export function QuestionList({ questions, selectedId, onSelect }: QuestionListProps) {
+export function QuestionList({ questions, selectedId, onSelect }) {
   return (
     <div id="question-list" className="space-y-2">
       {questions.map((q) => (

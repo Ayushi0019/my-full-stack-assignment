@@ -1,13 +1,8 @@
-import { Language } from '../data/questions';
+import React from 'react';
 
-const languages: Language[] = ['HTML', 'CSS', 'JavaScript', 'React', 'PHP'];
+const languages = ['HTML', 'CSS', 'JavaScript', 'React', 'PHP'];
 
-interface SidebarProps {
-  selectedLanguage: Language;
-  onSelect: (lang: Language) => void;
-}
-
-export function Sidebar({ selectedLanguage, onSelect }: SidebarProps) {
+export function Sidebar({ selectedLanguage, onSelect }) {
   return (
     <div id="sidebar" className="w-48 bg-worst-sidebar border-4 border-black h-screen p-4 overflow-y-auto">
       <h1 className="text-2xl font-bold mb-6 underline text-center">

@@ -1,16 +1,11 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { useState, useMemo } from 'react';
 import { Sidebar } from './components/Sidebar';
 import { QuestionList, QuestionDisplay } from './components/Content';
-import { questions, Language } from './data/questions';
+import { questions } from './data/questions';
 
 export default function App() {
-  const [selectedLanguage, setSelectedLanguage] = useState<Language>('HTML');
-  const [selectedQuestionId, setSelectedQuestionId] = useState<string | null>(null);
+  const [selectedLanguage, setSelectedLanguage] = useState('HTML');
+  const [selectedQuestionId, setSelectedQuestionId] = useState(null);
 
   const filteredQuestions = useMemo(() => {
     return questions.filter(q => q.category === selectedLanguage);
